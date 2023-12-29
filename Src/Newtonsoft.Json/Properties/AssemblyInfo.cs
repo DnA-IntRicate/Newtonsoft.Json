@@ -24,14 +24,23 @@
 #endregion
 
 using System;
+using System.Diagnostics;
 using System.Reflection;
+using System.Resources;
 using System.Runtime.CompilerServices;
 using System.Runtime.InteropServices;
+using System.Runtime.Versioning;
 using System.Security;
 
 // General Information about an assembly is controlled through the following 
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
+
+[assembly: AssemblyVersion("13.0.1")]
+[assembly: CompilationRelaxations(8)]
+[assembly: RuntimeCompatibility(WrapNonExceptionThrows = true)]
+[assembly: Debuggable(DebuggableAttribute.DebuggingModes.IgnoreSymbolStoreSequencePoints)]
+
 #if NET20
 [assembly: AllowPartiallyTrustedCallers]
 #elif NET35
@@ -68,3 +77,12 @@ using System.Security;
 #endif
 
 [assembly: CLSCompliant(true)]
+[assembly: AssemblyCompany("Newtonsoft")]
+[assembly: AssemblyConfiguration("Release")]
+[assembly: AssemblyCopyright("Copyright © James Newton-King 2008")]
+[assembly: AssemblyDescription("Json.NET is a popular high-performance JSON framework for .NET")]
+[assembly: AssemblyFileVersion("13.0.1")]
+[assembly: AssemblyInformationalVersion("13.0.3+0a2e291c0d9c0c7675d445703e51750363a549ef")]
+[assembly: AssemblyProduct("Json.NET")]
+[assembly: AssemblyTitle("Json.NET .NET 4.0")]
+[assembly: NeutralResourcesLanguage("en-US")]
